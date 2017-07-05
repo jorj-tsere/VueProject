@@ -2,21 +2,25 @@
 <div>
   <h2>{{ title }}</h2>
   <!-- HEADER  -->
-  <header></header>
+  <app-header></app-header>
   <!-- CONTENT  -->
-  <content></content>
+  <app-content></app-content>
   <!-- FOOTER  -->
-  <footer></footer>
+  <app-footer></app-footer>
 </div>
 </template>
 
 
 
 <script>
-
+import Header fom './components/Header.vue'
 export default {
-
-  data () {
+  components:{
+    'app-header': Header,
+    'app-content': Content,
+    'app-footer': Footer
+  },
+  data() {
     return {
       title:'my applicaiton'
     }
@@ -24,6 +28,6 @@ export default {
 }
 </script>
 
-<style>
+<style >
 
 </style>
