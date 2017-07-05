@@ -6,7 +6,7 @@
 export default {
   data(){
     return{
-      data:'footer data'
+      data:'Footer data'
     }
   }
 }
@@ -14,6 +14,9 @@ export default {
 
 <style lang="css" scoped>
   h2{
-    color:yellow;
+    padding:40px 0;
+    text-align: center;
+    background: #333;
+    color:#fff;
   }
 </style>

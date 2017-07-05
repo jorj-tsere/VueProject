@@ -1,6 +1,5 @@
 <template>
 <div>
-  <h2>{{ title }}</h2>
   <!-- HEADER  -->
   <app-header></app-header>
   <!-- CONTENT  -->
@@ -13,17 +12,14 @@
 
 
 <script>
-import Header fom './components/Header.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import Content from './components/Content.vue'
 export default {
   components:{
     'app-header': Header,
     'app-content': Content,
     'app-footer': Footer
-  },
-  data() {
-    return {
-      title:'my applicaiton'
-    }
   }
 }
 </script>
